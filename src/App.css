@@ -248,13 +248,13 @@
   }
 
   .searchBar {
-    width: 90vw;
-    max-width: 320px;
+    width: 85vw;
+    max-width: 300px;
   }
 
   .movieSearchBar form button {
-    width: 90vw;
-    max-width: 310px;
+    width: 85vw;
+    max-width: 300px;
   }
 
   .card {
