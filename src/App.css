@@ -263,7 +263,7 @@
     width: 100%;
     max-width: 340px;
     margin: 0 auto;
-    margin-left: 3px;
+    margin-left: -5px;
   }
 
   .card-img {
