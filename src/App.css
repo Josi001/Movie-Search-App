@@ -179,16 +179,121 @@
 
 @media (max-width: 1200px) {
   .card-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .searchBar {
+    width: 350px;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 900px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .searchBar {
+    width: 280px;
+  }
+
+  .movieSearchBar form button {
+    width: 120px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .notification {
+    display: none;
   }
 }
-@media (max-width: 480px) {
+
+@media (max-width: 600px) {
   .card-container {
     grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .movieSearchText {
+    justify-content: center;
+  }
+
+  .movieSearchBar form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .notification {
+    display: none;
+  }
+
+  .searchBar {
+    width: 90vw;
+    max-width: 320px;
+  }
+
+  .movieSearchBar form button {
+    width: 90vw;
+    max-width: 320px;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .card-content {
+    padding: 14px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .notification {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .searchBar,
+  .movieSearchBar form button {
+    width: 95vw;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+  .notification {
+    display: none;
   }
 }
